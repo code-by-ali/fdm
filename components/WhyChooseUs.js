@@ -4,7 +4,7 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center">Why Choose Us</h2>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {[
             "High Precision Manufacturing",
             "Advanced Laser Technology",
