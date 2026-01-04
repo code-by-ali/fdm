@@ -31,7 +31,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden bg-white border-t border-gray-200">
+        <nav className="md:hidden bg-white border-t border-gray-200 text-gray-700">
           <div className="flex flex-col px-6 py-4 space-y-4">
             <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/services" onClick={() => setIsOpen(false)}>Services</Link>
