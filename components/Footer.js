@@ -1,15 +1,22 @@
 import Link from "next/link";
+import {
+  FaWhatsapp,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-foreground text-muted">
       {/* Top Section */}
-      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Company Info */}
         <div>
-          <h3 className="text-red-700 text-xl font-bold mb-4">
-            Laser Die & Corrugation
+          <h3 className="logo-text text-primary text-2xl tracking-widest mb-4">
+            Fakhri Die Makers
           </h3>
+
           <p className="text-sm leading-relaxed">
             Manufacturer of precision laser cutting dies and corrugation
             solutions for the packaging industry. Quality, accuracy, and
@@ -19,7 +26,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+          <h4 className="text-background font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             {[
               { name: "Home", href: "/" },
@@ -30,7 +37,7 @@ export default function Footer() {
               <li key={i}>
                 <Link
                   href={link.href}
-                  className="hover:text-red-600 transition-colors"
+                  className="hover:text-primary transition"
                 >
                   {link.name}
                 </Link>
@@ -41,7 +48,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="text-white font-semibold mb-4">Our Services</h4>
+          <h4 className="text-background font-semibold mb-4">Our Services</h4>
           <ul className="space-y-2 text-sm">
             <li>Laser Cutting Dies</li>
             <li>Corrugation Dies</li>
@@ -52,18 +59,28 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h4 className="text-white font-semibold mb-4">Contact</h4>
-          <ul className="space-y-2 text-sm">
-            <li>📍 Industrial Area, India</li>
-            <li>📞 +91 98765 43210</li>
-            <li>✉️ info@yourcompany.com</li>
+          <h4 className="text-background font-semibold mb-4">Contact</h4>
+          <ul className="space-y-3 text-sm">
+            <li className="flex items-center gap-3">
+              <FaMapMarkerAlt className="text-primary" />
+              Industrial Area, India
+            </li>
+            <li className="flex items-center gap-3">
+              <FaPhoneAlt className="text-primary" />
+              +91 98264 20653
+            </li>
+            <li className="flex items-center gap-3">
+              <FaEnvelope className="text-primary" />
+              info@yourcompany.com
+            </li>
             <li>
               <a
-                href="https://wa.me/919876543210"
-                className="hover:text-green-500 transition-colors"
+                href="https://wa.me/919826420653"
                 target="_blank"
+                className="flex items-center gap-3 hover:text-primary transition"
               >
-                💬 WhatsApp
+                <FaWhatsapp className="text-lg" />
+                WhatsApp
               </a>
             </li>
           </ul>
@@ -71,8 +88,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div className="border-t border-border">
+        <div className="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-muted">
           <p>
             © {new Date().getFullYear()} Laser Die & Corrugation. All rights
             reserved.
