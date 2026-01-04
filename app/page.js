@@ -1,6 +1,7 @@
 import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
+import ServicesSection from "@/components/ServicesSection";
 import Team from "@/components/Team";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
@@ -23,22 +24,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-
-      {/* Services */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-gray-900">
-            Our Services
-          </h2>
-
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {services.map((s, i) => (
-              <ServiceCard key={i} {...s} />
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <ServicesSection />
       <WhyChooseUs />
       <Team />
       <CTA />

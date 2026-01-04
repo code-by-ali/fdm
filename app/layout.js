@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Die & Corrugation Works",
+  title: "Fakhri Die Makers",
   description: "Precision Laser Die & Corrugation Services",
 };
 
